@@ -1,0 +1,113 @@
+:root {
+    font-size: 16px;
+    --gris30: #212121;
+    --gris20: #212429;
+    --gris10: #616161;
+}
+
+body {
+    color: var(--gris30);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: var(--gris30);
+}
+
+header {
+    font-size: 14px;
+    color: var(--gris10);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--gris10);
+}
+
+header a:hover {
+    color: var(--gris30);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    /* font-size: 3.75rem; */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+pre {
+    background: #FEC62E;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px 0 0;
+}
+
+.hero {
+    background: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url(../img/patron-1.png);
+    height: 350px;
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+.section-content h3 {
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal) ". ";
+}
+
+.section-content h3::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: var(--gris30);
+    display: block;
+}
+
+.textbox {
+    position: static;
+    width: 280px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid var(--gris10);
+    box-sizing: border-box;
+    border-radius: 90px;
+}
+
+.btn {
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px;
+    position: absolute; */
+    width: 119px;
+    height: 48px;
+    left: 514px;
+    top: 0px;
+    background: #000000;
+    border-radius: 90px;
+    color: #fff;
+}
