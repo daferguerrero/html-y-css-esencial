@@ -5,6 +5,11 @@
     --gris10: #616161;
 }
 
+html {
+    /*----- ----- Suavizado para el scroll ----- -----*/
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--gris30);
     font-family: 'Roboto', sans-serif;
@@ -18,6 +23,12 @@ a {
 header {
     font-size: 14px;
     color: var(--gris10);
+    top: 64px;
+    left: -232px;
+    z-index: 1;
+    /* background-color: red; */
+    position: absolute;
+    width: 188px;
 }
 
 header a {
@@ -29,8 +40,13 @@ header a:hover {
     color: var(--gris30);
 }
 
+header li {
+    margin-bottom: 16px;
+}
+
 nav details summary {
     font-weight: bold;
+    line-height: 24px;
 }
 
 h1 {
@@ -56,6 +72,10 @@ h3 {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    /*----- ----- h3 cambia subtitulos ----- -----*/
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 hr {
@@ -97,6 +117,31 @@ blockquote span::before {
     content: '-';
 }
 
+.main {
+    /* background-image: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url(../img/patron-1.png); */
+}
+
+.main-content {
+    /* padding: 20px; */
+    background: white;
+}
+
+/* ------------------------- */
+/* EL menu persigue al scroll */
+/* ------------------------- */
+.header {
+    position: sticky;
+    top: 0;
+}
+.header-content {
+    position: relative;
+}
+
+.wrapper {
+    width: 902px;
+    margin: auto;
+}
+
 .hero {
     background-image: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url(../img/patron-1.png);
     height: 350px;
@@ -104,7 +149,7 @@ blockquote span::before {
 
 .section-content {
     counter-reset: titleList;
-    margin-top: 164px;
+    /* margin-top: 164px; */
 }
 
 .section-content :first-of-type {
@@ -136,7 +181,7 @@ blockquote span::before {
 
 .section-content h3 {
     counter-increment: titleList;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -149,6 +194,9 @@ blockquote span::before {
     height: 4px;
     background: var(--gris30);
     display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .textbox {
