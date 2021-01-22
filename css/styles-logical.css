@@ -20,20 +20,14 @@ a {
 header {
     font-size: 14px;
     color: var(--blanco10);
-    position: absolute;
-    inset-block-start: 0px;
-    inset-inline-start: -208px;
-    inline-size: 188px;
+    margin-block-start: 20px;
 }
 
 .header {
-    position: sticky;
-    inset-block-start: -45px;
 }
 
 .header-content {
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline: 20px;
 }
 
 header li {
@@ -65,8 +59,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
     /* font-size: 3.75rem; */
 }
@@ -133,7 +127,8 @@ blockquote p {
 .hero {
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
     /* background-image: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url(../img/patron-1.png); */
-    height: 350px;
+    /* height: 350px; */
+    block-size: 50px;
 }
 
 .section-content {
@@ -245,6 +240,31 @@ blockquote p {
     text-decoration: none;
 }
 
+.form input {
+    inline-size: 100%;
+    border: 1px solid var(--blanco30);
+    background: #251f24;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--blanco30);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type=submit] {
+    background-color: #157EFB;
+    border: none;
+}
+
+/*----- ----- Definir color de fuente de la propiedad placeholder ----- -----*/
+.form input ::-webkit-input-placeholder {
+    color: var(--blanco10);
+
+}
+
 #imgdom {
     width: 900px;
     height: 470px;
@@ -253,4 +273,48 @@ blockquote p {
 #imgcss {
     width: 901.05px;
     height: 428px;
+}
+
+
+@media screen and (min-width: 1366px) {
+    header {
+        position: absolute;
+        inset-block-start: 0px;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+
+    .header-content {
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+
+    .hero {
+        block-size: 350px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+
+    /* header li {
+        color: var(--blanco20);
+        margin-block-end: 16px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--blanco20);
+    }
+
+    header a:hover {
+        color: var(--blanco30);
+    } */
 }
