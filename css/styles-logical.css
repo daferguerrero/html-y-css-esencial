@@ -78,6 +78,9 @@ h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-block: 16px;
+    
+    position: sticky;
+    insert-block-start: 0;
     /* margin-block-end: 40px; */
 }
 
