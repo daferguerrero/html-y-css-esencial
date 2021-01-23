@@ -74,6 +74,7 @@ h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-block: 16px;
+    /* margin-block-end: 40px; */
 }
 
 pre {
@@ -108,10 +109,14 @@ footer i {
     margin-block-end: 45px;
 }
 
-p {
+footer p {
     color: var(--blanco20);
     display: inline-block;
     margin-block-start: 48px;
+}
+
+p {
+    color: var(--blanco20);
 }
 
 blockquote {
@@ -205,6 +210,14 @@ blockquote p {
     margin: auto;
 }
 
+.subtitulo {
+    margin-block-start: 40px;
+}
+
+.section-content li {
+    margin-block-end: 16px;
+}
+
 .slider {
     /* border: 1px solid red; */
 }
@@ -280,6 +293,16 @@ blockquote p {
 #imgcss {
     width: 901.05px;
     height: 428px;
+}
+
+#modelo-caja {
+    /* border: 1px solid red; */
+    margin-block: 0;
+}
+
+#a-mailto {
+    color: #3166d6;
+    font-size: 17px;
 }
 
 
