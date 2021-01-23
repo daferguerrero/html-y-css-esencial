@@ -91,6 +91,7 @@ footer {
     background: white;
     color: var(--blanco30);
     text-align: center;
+    margin-block-start: 80px;
 }
 
 footer a {
@@ -103,8 +104,14 @@ footer i {
     color: var(--blanco10);
 }
 
+.footer-i i {
+    margin-block-end: 45px;
+}
+
 p {
     color: var(--blanco20);
+    display: inline-block;
+    margin-block-start: 48px;
 }
 
 blockquote {
