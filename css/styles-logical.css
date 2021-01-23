@@ -80,7 +80,8 @@ h3 {
     margin-block: 16px;
     
     position: sticky;
-    insert-block-start: 0;
+    inset-block-start: 0;
+    background-color: #251F24;
     /* margin-block-end: 40px; */
 }
 
@@ -144,11 +145,15 @@ blockquote p {
     color: var(--blanco30);
 }
 
+blockquote span::before {
+    content: '-';
+}
+
 .hero {
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
     /* background-image: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url(../img/patron-1.png); */
     /* height: 350px; */
-    block-size: 50px;
+    block-size: 70px;
 }
 
 .section-content {
