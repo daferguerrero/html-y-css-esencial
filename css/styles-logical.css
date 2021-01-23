@@ -5,6 +5,10 @@
     --blanco10: #3A3539;
 }
 
+html {
+    /*----- ----- Suavizado para el scroll ----- -----*/
+    scroll-behavior: smooth;
+}
 
 body {
     color: var(--blanco30);
