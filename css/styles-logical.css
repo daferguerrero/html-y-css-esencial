@@ -93,6 +93,7 @@ footer {
     color: var(--blanco30);
     text-align: center;
     margin-block-start: 80px;
+    font-size: 12px;
 }
 
 footer a {
@@ -282,7 +283,11 @@ blockquote p {
 /*----- ----- Definir color de fuente de la propiedad placeholder ----- -----*/
 .form input ::-webkit-input-placeholder {
     color: var(--blanco10);
+}
 
+.form h3 {
+    /* border: 1px solid red; */
+    counter-set: none;
 }
 
 #imgdom {
@@ -332,6 +337,10 @@ blockquote p {
     h1 {
         font-size: 60px;
         margin-block-start: 64px;
+    }
+
+    footer {
+        font-size: 16px;
     }
 
     /* header li {
